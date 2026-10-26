@@ -7,6 +7,8 @@ Endpoints: GET /  |  POST /api/triage {text, t_urgent?, t_cat?}  |  POST /api/fe
 Feedback is appended to demo/feedback_log.jsonl so people who try the demo can leave structured feedback.
 """
 import json
+import os
+import subprocess
 import sys
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -14,9 +16,18 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from triage.cli import load_model, triage_text  # noqa: E402
+from triage.train import MODEL_PATH  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+
+# The trained model is git-ignored, so a fresh deployment (Render, Docker, ...) trains it once at start-up (~10 s).
+if not MODEL_PATH.exists():
+    print("No trained model found - training one now (10-60 s on a small host)...", flush=True)
+    subprocess.run([sys.executable, "-m", "triage.train"], check=True, cwd=ROOT)
+
+from triage.cli import load_model, triage_text  # noqa: E402
+
 MODEL, META = load_model()
 FEEDBACK = HERE / "feedback_log.jsonl"
 
@@ -69,6 +80,8 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
-    print(f"Incident triage demo on http://localhost:{port}  (model trained {META['trained_at']}, regime={META['regime']})")
-    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    # Hosting services set PORT and need 0.0.0.0; locally we stay on 127.0.0.1 unless HOST says otherwise.
+    port = int(os.environ.get("PORT") or (sys.argv[1] if len(sys.argv) > 1 else 8000))
+    host = os.environ.get("HOST") or ("0.0.0.0" if os.environ.get("PORT") else "127.0.0.1")
+    print(f"Incident triage demo on http://{host}:{port}  (model trained {META['trained_at']}, regime={META['regime']})", flush=True)
+    ThreadingHTTPServer((host, port), Handler).serve_forever()

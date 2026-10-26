@@ -6,6 +6,12 @@ Classifies free-text incident reports into 9 categories, routes them to a team, 
 
 ![demo](docs/demo_screenshot.png)
 
+## Live demo
+
+**Live demo: [PASTE YOUR LIVE DEMO URL HERE]**  (free hosting sleeps when idle; the first load can take about a minute while it wakes up)
+
+To run it yourself: see Quick start below. To deploy your own copy: connect this repository to Render (it reads `render.yaml`) or build the `Dockerfile`; the server reads the `PORT` environment variable. The trained model (`models/triage_model.joblib`, ~1.4 MB) is committed so the host does not have to train it; if it is missing the server trains one on start-up (slow on a free instance).
+
 ## Quick start
 
 ```bash
@@ -15,6 +21,13 @@ make demo       # trains, then serves http://localhost:8000
 ```
 Or step by step: `python -m triage.data_gen`, `python -m triage.evaluate`, `python -m triage.change_request`, `python -m triage.train`, `python demo/server.py 8000`.
 CLI: `python -m triage.cli "driver is bleeding after a collision"` or `--file reports.csv --out triaged.csv`. Tests: `make test`.
+
+## Collaboration and use of AI agents
+
+- **AI agent:** Claude (Anthropic, Claude Sonnet 5.5) wrote essentially all of the code (`triage/`, `demo/`, `tests/`, the synthetic data generator), the first drafts of every document, and ran the experiments in `results/` through its file and shell tools in a single working session on 2026-10-26. The numbers in `results/` are the unedited output of the scripts in this repository. Full detail: `ATTRIBUTION.md`.
+- **Me (project owner):** I specified the project and directed Claude throughout (vibe coding): I set the goals, reviewed what it produced, and chose what to keep. I did not write the code by hand.
+- **Other people:** none. This was solo work with Claude. The independent label review and the demo feedback described in `FEEDBACK.md` and `data/review/` were not done.
+- No real or confidential data was given to any AI tool; all data is synthetic.
 
 ## What is in the repo
 
@@ -56,14 +69,14 @@ Changed requirements (`results/CHANGE_REQUEST.md`): strict penalty (300) -> re-t
 
 | requirement | status |
 |---|---|
-| working demo | done (`demo/`, tested with curl and a headless browser) |
+| working demo | done (`demo/`, tested with curl and a headless browser); live link at the top of this README |
 | dataset >= 300 reports, documented, non-confidential | done: 900 synthetic, `data/DATA_PROVENANCE.md` |
 | **independent review of >= 50 labels** | **NOT done.** Blind 60-report sheet, instructions and scoring script are ready; needs a human who did not write the labels |
 | >= 2 approaches, baseline, quality / latency / cost, error analysis, abstention | done |
 | changed requirement | done (two scenarios) |
-| GitHub repo | local git repo ready; **not published** (no GitHub credentials in the build environment) |
+| GitHub repo | this repository |
 | one-page business summary | done |
-| attribution of collaborators and AI tools | AI tool done; **names to fill in** in `ATTRIBUTION.md` |
+| attribution of collaborators and AI tools | done (`ATTRIBUTION.md`; solo work with Claude, no other collaborators) |
 | feedback from someone who tried the demo | **NOT done**; `FEEDBACK.md` has the protocol |
 
 ## Limitations

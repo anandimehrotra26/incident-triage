@@ -1,6 +1,5 @@
 __pycache__/
 *.pyc
-models/*.joblib
 demo/feedback_log.jsonl
 .venv/
 .DS_Store

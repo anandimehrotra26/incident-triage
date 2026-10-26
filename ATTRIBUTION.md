@@ -4,9 +4,9 @@
 
 | role | name | what they did |
 |---|---|---|
-| Project owner / submitter | **[FILL IN: your name]** | Set the brief, directed the work, reviewed outputs, publishes the repository. |
-| Independent label reviewer | **[FILL IN: name or role, or "not yet done"]** | Completes `data/review/review_sheet_blank.csv` (>= 50 reports). Must not be the submitter. |
-| Demo tester(s) | **[FILL IN, or "none yet"]** | See `FEEDBACK.md`. |
+| Project owner / submitter | **anandimehrotra26** (GitHub) | Set the brief and directed Claude throughout (vibe coding), reviewed outputs, publishes the repository. Did not write the code by hand. |
+| Independent label reviewer | **not yet done** | Completes `data/review/review_sheet_blank.csv` (>= 50 reports). Must not be the submitter. |
+| Demo tester(s) | **none yet** | See `FEEDBACK.md`. |
 
 ## AI tools
 

@@ -1,6 +1,6 @@
 numpy>=2.0
 pandas>=2.2
-scikit-learn>=1.5
+scikit-learn==1.9.1  # pinned: the shipped models/triage_model.joblib was trained with this exact version
 scipy>=1.13
 matplotlib>=3.8
 joblib>=1.4
