@@ -8,7 +8,7 @@ Classifies free-text incident reports into 9 categories, routes them to a team, 
 
 ## Live demo
 
-**Live demo: [PASTE YOUR LIVE DEMO URL HERE]**  (free hosting sleeps when idle; the first load can take about a minute while it wakes up)
+**Live demo: https://incident-triage-demo.onrender.com  (free hosting sleeps when idle; the first load can take about a minute while it wakes up)
 
 To run it yourself: see Quick start below. To deploy your own copy: connect this repository to Render (it reads `render.yaml`) or build the `Dockerfile`; the server reads the `PORT` environment variable. The trained model (`models/triage_model.joblib`, ~1.4 MB) is committed so the host does not have to train it; if it is missing the server trains one on start-up (slow on a free instance).
 
