@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident triage demo</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1c2430; --mute:#667085; --line:#e4e7ec; --red:#c0392b; --amber:#b9770e; --green:#1e8449; --blue:#2255cc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12161c; --card:#1b212b; --ink:#e8ecf2; --mute:#98a2b3; --line:#2b3340; --red:#ff6b5b; --amber:#f0b44c; --green:#52c98a; --blue:#7aa2ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width: 880px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 20px; margin: 4px 0 2px; } .sub { color: var(--mute); margin: 0 0 16px; font-size: 13px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+  textarea { width:100%; min-height: 90px; padding:10px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink); font: inherit; resize: vertical; }
+  button { font: inherit; border:1px solid var(--line); background: var(--card); color: var(--ink); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+  button.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .ex { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; } .ex button { font-size: 12px; padding: 4px 8px; color: var(--mute); }
+  .row { display:flex; gap:16px; flex-wrap:wrap; align-items:center; margin-top:10px; font-size: 13px; color: var(--mute); }
+  .row input[type=range] { width: 150px; vertical-align: middle; }
+  .badge { display:inline-block; padding: 3px 10px; border-radius: 999px; font-weight: 600; font-size: 13px; border:1px solid currentColor; }
+  .urgent { color: var(--red); } .standard { color: var(--green); } .human { color: var(--amber); }
+  .big { font-size: 22px; font-weight: 650; margin: 6px 0; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; } @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .bar { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; margin: 3px 0 8px; } .bar > div { height: 100%; background: var(--blue); }
+  .small { font-size: 12px; color: var(--mute); } code { background: var(--bg); padding: 1px 5px; border-radius: 4px; }
+  table { width:100%; border-collapse: collapse; font-size: 13px; } td, th { text-align:left; padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fb { margin-top: 10px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; } .fb input { flex:1; min-width: 160px; padding:6px 8px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink); font:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Incident triage demo</h1>
+  <p class="sub">Classifies a logistics incident report, routes it to a team, flags urgent cases, and sends uncertain ones to a human. Trained on synthetic data only - treat outputs as a demonstration, not as advice.</p>
+
+  <div class="card">
+    <textarea id="text" placeholder="Paste or type an incident report..."></textarea>
+    <div class="ex" id="examples"></div>
+    <div class="row">
+      <span>urgent threshold <input id="tu" type="range" min="0.005" max="0.9" step="0.005"> <b id="tuv"></b></span>
+      <span>category confidence needed to auto-route <input id="tc" type="range" min="0.1" max="0.95" step="0.05"> <b id="tcv"></b></span>
+      <button id="reset">reset to trained values</button>
+      <span style="flex:1"></span>
+      <button class="primary" id="go">Triage</button>
+    </div>
+  </div>
+
+  <div id="out" class="card" style="display:none">
+    <div class="grid">
+      <div>
+        <div class="small">ROUTE TO</div>
+        <div class="big" id="queue"></div>
+        <span class="badge" id="prio"></span> <span class="badge human" id="human" style="display:none">needs human review</span>
+        <div class="small" style="margin-top:8px" id="why"></div>
+      </div>
+      <div>
+        <div class="small">Urgent probability <b id="pu"></b></div><div class="bar"><div id="puBar"></div></div>
+        <div class="small">Top categories</div><div id="top3"></div>
+      </div>
+    </div>
+    <div class="small" id="explain" style="margin-top:6px"></div>
+    <div class="fb"><span class="small">Was this routing right?</span>
+      <button id="ok">yes</button><button id="bad">no</button><input id="comment" placeholder="optional comment (what should have happened?)"><span class="small" id="fbmsg"></span></div>
+  </div>
+
+  <div class="card"><div class="small" style="margin-bottom:6px">Session log</div><table id="log"><tr><th>report</th><th>route</th><th>priority</th><th>ms</th></tr></table></div>
+</main>
+<script>
+const EXAMPLES = [
+  "Truck T-212 collided with a car on the expressway, driver is bleeding and an ambulance has been called",
+  "Drum of corrosive acid leaking inside the trailer, strong fumes, staff evacuated",
+  "Armed men stopped our truck and the driver is being held",
+  "Received 6 cartons crushed on pallet 3, forklift marks visible, photos attached",
+  "Shipment SH-48213 is 2 days late and the customer is asking for an ETA",
+  "Customs hold on container MSKU123456, commercial invoice missing",
+  "Parcel delivered to the wrong address, a neighbour has it",
+  "Can someone look at this please",
+  "Reefer unit failed, temperature rising, vaccines inside (a category the base model has never seen)"
+];
+let META = {}, last = null;
+const $ = id => document.getElementById(id);
+EXAMPLES.forEach(t => { const b = document.createElement('button'); b.textContent = t.length > 48 ? t.slice(0,46) + '...' : t; b.title = t; b.onclick = () => { $('text').value = t; go(); }; $('examples').appendChild(b); });
+function syncLabels() { $('tuv').textContent = (+$('tu').value).toFixed(3); $('tcv').textContent = (+$('tc').value).toFixed(2); }
+$('tu').oninput = $('tc').oninput = syncLabels;
+$('reset').onclick = () => { $('tu').value = META.t_urgent; $('tc').value = META.t_cat; syncLabels(); };
+fetch('/api/meta').then(r => r.json()).then(m => { META = m; $('reset').click(); });
+async function go() {
+  const text = $('text').value.trim(); if (!text) return;
+  const r = await fetch('/api/triage', {method:'POST', body: JSON.stringify({text, t_urgent: +$('tu').value, t_cat: +$('tc').value})});
+  const d = await r.json(); last = {text, d};
+  $('out').style.display = 'block';
+  $('queue').textContent = d.queue.replaceAll('_', ' ');
+  const p = $('prio'); p.textContent = d.priority; p.className = 'badge ' + (d.priority === 'URGENT' ? 'urgent' : 'standard');
+  $('human').style.display = d.needs_human ? 'inline-block' : 'none';
+  $('pu').textContent = (d.p_urgent * 100).toFixed(1) + '%'; $('puBar').style.width = Math.min(100, d.p_urgent * 100) + '%';
+  $('top3').innerHTML = d.top3.map(([c, p]) => `<div class="small">${c.replaceAll('_',' ')} <b>${(p*100).toFixed(0)}%</b></div><div class="bar"><div style="width:${p*100}%"></div></div>`).join('');
+  $('why').textContent = d.needs_human ? `Best guess ${d.category.replaceAll('_',' ')} at ${(d.p_category*100).toFixed(0)}% confidence, below what is needed to auto-route; a person decides. ` + (d.priority === 'URGENT' ? 'Flagged URGENT so it goes to the front of the human queue.' : '') : `Confident enough (${(d.p_category*100).toFixed(0)}%) to auto-route.`;
+  const ex = d.explain || {}; const terms = (ex.top_terms || []).map(t => t[0]).join(', '); const hits = Object.keys(ex.rule_hits || {}).join(', ');
+  $('explain').innerHTML = `Words that pushed the category: <code>${terms || '-'}</code> &nbsp; Rule cues: <code>${hits || '-'}</code>`;
+  $('fbmsg').textContent = ''; $('comment').value = '';
+  const tr = document.createElement('tr'); tr.innerHTML = `<td></td><td>${d.queue}${d.needs_human ? ' (human)' : ''}</td><td>${d.priority}</td><td>${d.latency_ms}</td>`;
+  tr.firstChild.textContent = text.length > 80 ? text.slice(0, 78) + '...' : text; const log = $('log'); log.insertBefore(tr, log.rows[1] || null);
+}
+async function fb(verdict) { if (!last) return; await fetch('/api/feedback', {method:'POST', body: JSON.stringify({text: last.text, prediction: last.d, verdict, comment: $('comment').value})}); $('fbmsg').textContent = 'thanks, saved'; }
+$('ok').onclick = () => fb('correct'); $('bad').onclick = () => fb('wrong');
+$('go').onclick = go; $('text').addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') go(); });
+</script>
+</body>
+</html>

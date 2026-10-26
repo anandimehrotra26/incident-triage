@@ -1,0 +1,275 @@
+id,text,true_category,true_urgent,pred_category,pred_urgent,abstained,p_category,p_urgent,cost,event,hard,template_id,label_noise_injected
+INC-0005,"Quick note: cntr CMAU212024 opened w/ mould on some cartons, humidity suspected. This will probably delay the dlvry. Let me know next steps.",cargo_damage,0,delay_late,0,0,,,8.0,wrong_team,1,cargo_damage|N|7,0
+INC-0006,"Customer service agent here. seal broken on trailer LRY-52 on arrival, looks tampered overnight, 8 cartons missing from the count. Let me know next steps.",theft_security,0,theft_security,0,0,,,0.0,,0,theft_security|N|0,0
+INC-0007,Morning all late arrival of the linehaul trailer outbound wave pushed back by 8 hours Logged for the record,delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0009,"Hi team, employee got a minor cut on the hand from a strapping band, plaster applied, logging for record.",accident_injury,0,unclear_other,0,1,,,4.0,review,0,accident_injury|N|7,0
+INC-0020,"Hijack attempt on route, driver locked the doors and is calling from the cab Send help.",theft_security,1,theft_security,1,0,,,0.0,,0,theft_security|U|3,0
+INC-0023,"Morning all, late arrival of the linehaul trailer, outbound wave pushed back by 4 hours. Weather is bad today as well.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0028,FYI - follow up needed. No damage to the cargo. Logged for the record.,unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|8,0
+INC-0034,"Re PO-3979: pallet collapesd in transit, around 15% of bxoes broken cust has been informed.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|2,0
+INC-0039,"T-413 scraped a bollard while reversing, driver is fine, bumper cracked Thanks.",accident_injury,0,cargo_damage,0,0,,,25.0,wrong_team_critical,0,accident_injury|N|3,0
+INC-0043,"Re PO-2571: SH-41135 still at the hub, connection missed, next departure tomorrow. Nobody was hurt.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0045,Pallet collapsed in transit around 5% of boxes broken Customer has been infored,cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0049,"wet cartons after the rain, contents seem dry, will check tomorrow. thanks.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|5,0
+INC-0050,Reporting from Changi cargo terminal: SH-87623 marked delivered but the customer says nothing arrived. Let me know next steps.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0053,"Update on SH-90902: check engine light on LRY-202, finishing the route then going to the workshop.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|0,0
+INC-0061,"Reporting from Jurong DC: issue with the shipment, details to follow Photos to follow.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0063,"FYI - wrong HS code on the declaration for SH-81018, broker needs to amend We may need to file a damage claim.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0068,"URRGENT - truck TRK-132 broke down in the middle lane of the expressway, hazard lights on, trfafic...",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0072,"Hi team, late arrival of the linehaul trailer, outbound wave pushed back by 6 hours Let me know next steps.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0073,"Update on SH-37195: check engine light on VAN-106, finishing the route then going to the workshop. pls advise.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|0,0
+INC-0074,"Quick note: fuel siphoning noticed on VAN-236, tank much lower than logged. Logged for the record.",theft_security,0,hazmat_spill,0,0,,,25.0,wrong_team_critical,0,theft_security|N|4,0
+INC-0075,"Re PO-3832: carton missing from the pallet delivered, count is 12 vs 15. Not a theft as far as we know.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0079,"Reporting from Ipoh transfer point: pickup not done today, collection requested again for tomorrow. We may need to file a damage claim. Thanks.",delay_late,0,cargo_damage,0,0,,,8.0,wrong_team,1,delay_late|N|5,0
+INC-0080,"Pallet colapsed in transit, around 5% of boxes broken",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0085,"FYI - medical equipment for a surgery in 3 hours arrived cracked, hsopital needs a replacement or repair today This will proabbly delay the dlvry. Send help.",cargo_damage,1,cargo_damage,1,0,,,0.0,,1,cargo_damage|U|0,0
+INC-0097,"Customer here. T-150 stalled on a level crossing, driver evacuating the cab.",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0101,"Reporting from Kuantan warehouse: container CMAU712885 opened with mould on some cartons, humidity suspected. Please advise.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0102,"Re PO-1912: issue with the shpmt, deatils to follow",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0105,Update on SH-07475: wrong HS code on the declaration for SH-70475 broker needs to amend,customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0111,"Pickup not done today, collection requested again for tomorrow. No spill. Customer has been informed.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0112,SH-57250 markked delivered but the customer says nothing arrived.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0114,"Pallet collapsed in transit, around 40% of boxes brokn.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|2,0
+INC-0115,Quick note: SH-40637 marked delivered but the customer says nothing arrived. Customer has asked for an update.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|8,0
+INC-0116,"Re PO-7654: wrong HS code on the declaration for SH-71898, broker neeeds to amend Same lane had a problem last week. Let me know next steps.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0119,"Duty payment query from customs on SH-81776, finance is checking. The truck has also been making a noise lately.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|8,0
+INC-0125,"Reporting from Laem Chabang yard: pickup not done today, collection requested again for tomorrow. Nobody was hurt. Photos to follow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0129,"Container MSKU963760 opened with mould on some cartons, humidity suspected. Logged for the record.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0131,"Rporting from Johor Bahru checkpoint: flat tyre on TRK-448 at the depot, spare fitted, back in service Logged for the record.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|1,0
+INC-0133,"Reporting from Port Klng depot: flat tyre on LRY-71 at the depot, spare fitted, back in service.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|1,0
+INC-0139,"Customer service agent here. e-manifest mismatch on MSKU279022, weight differs from the declaration. Insurance may need to be told.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|6,0
+INC-0145,"Reporting from Bangkok cross-dock: late arrival of the linehaul trailer, outbound wave pushed back by 36 hours. Photos to follow.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0146,"Reporting from Woodlands checkpoint: chlorine tablets drum split open and reacting w/ water, fumes spreading in the shed. Calling you now.",hazmat_spill,1,hazmat_spill,1,0,,,0.0,,0,hazmat_spill|U|5,0
+INC-0148,"morning all, container oolu541508 opened w/ mould on some carotns, humidity suspceted. photos to follow.",cargo_damage,0,unclear_other,0,1,,,4.0,review,1,cargo_damage|N|7,0
+INC-0156,"fuel siphoning noticed on trk-299, tank much lower than logged. logged for the record.",theft_security,0,hazmat_spill,0,0,,,25.0,wrong_team_critical,1,theft_security|N|4,0
+INC-0160,"Update on SH-17629: pedestrian struck by a reversing lorry at Tuas hub, casualty on the ground, calling 995.",accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|7,0
+INC-0163,"Re PO-4373: SH-98488 still at the hub, connection missed, next departure tomorrow Customer has been informed.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0164,"Morning all, wet carotns after the rain, contents seem dry, will check tomorrow Photos to follow.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|5,0
+INC-0167,"Gate guard here. T-423 stalled on a level crossing, driver evauating the cab. Need someone on site now.",accident_injury,1,vehicle_breakdown,0,0,,,125.0,missed_urgent+wrong_team_critical,0,vehicle_breakdown|U|3,1
+INC-0172,Follow up needed. Thanks.,unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|8,0
+INC-0175,"late arrival of the linehaul trailer, outbound wave pushed back by 24 hours we may need to file a damage claim.",delay_late,0,cargo_damage,0,0,,,8.0,wrong_team,1,delay_late|N|7,0
+INC-0177,"Seal broken on trailer LRY-313 on arrival, looks tampered overnight, 24 cartons missing from the count. The truck has also been making a noise lately. Will update later.",theft_security,0,theft_security,0,0,,,0.0,,1,theft_security|N|0,0
+INC-0184,"Not sure who handles this, the thing at Port Klang depot again. Thanks.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|7,0
+INC-0185,"Update on SH-71662: LRY-173 scraped a bollard while reversing, driver is fine, bumper cracked Logged for the record.",accident_injury,0,cargo_damage,0,0,,,25.0,wrong_team_critical,0,accident_injury|N|3,0
+INC-0188,"Reporting from Laem Chabang yard: wet cartons after the rain, contents seem dry, will check tomorrow Will update later.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0189,"late arrival of the linehaul trailer, outbound wave pushed back by 8 hours. Photos to follow.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0194,"late arrival of the linehaul trialer, outbound wave pushed back by 12 hours. pls advise.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0195,"Not sure who handles this, the thing at Pasir Panjang terminal again. Photos to follow.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|7,0
+INC-0199,"Wrong HS code on the declaration for SH-97527, broker needs to amend. Not sure if the shipment is complete. Will update later.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0200,"Update on SH-52233: customer received someone else's order, wants it collected Weather is bad today as well.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|5,0
+INC-0202,"quick note: duty payment query from customs on sh-71905, finance is checking. cust has been informed.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0203,"fyi - check engine light on trk-161, finishing the route then going to the workshop. lgged for the record.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|0,0
+INC-0212,URGENT - forklift overturned and the operator is not responding.,accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|2,0
+INC-0213,"ASAP: need someone at Laem Chabang yard immediately, cannot explain on the phnoe.",unclear_other,1,unclear_other,1,1,,,4.0,review,1,unclear_other|U|1,0
+INC-0214,"10 aerosol cans leking a bit of propellnt in a cage, ventilated area, no one affected. please advise.",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,1,hazmat_spill|N|5,0
+INC-0217,"AASP: hijack attempt on route, driver locked the doors and is calling from the cab.",theft_security,1,theft_security,1,0,,,0.0,,0,theft_security|U|3,0
+INC-0218,"pallet collapsed in transit, around 30% of boxes broken",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0219,"Urgent please, wrong HS code on the declaration for SH-66362, broker needs to amend. Please advise.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0228,"uregnt: hijack attempt on rouute, driver locked the doors and is calling from the cab. the trk has also been makking a noise lately.",theft_security,1,theft_security,1,0,,,0.0,,1,theft_security|U|3,0
+INC-0229,"Morning all, wet cartons after the rani, contents seem dry, will check tomorrow. Thanks.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|5,0
+INC-0232,"SH-62870 still at the hub, connection missde, next departure tomorrow Same lane had a problem last week.",delay_late,0,unclear_other,0,1,,,4.0,review,1,delay_late|N|6,0
+INC-0233,"Morning all, SH-63578 still at the hub, connection missed, next departure tomorrow",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0234,"E-manifest mismatch on MSKU103368, weight differs from the declaration. This will probably delay the delivery. Please advise.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|6,0
+INC-0241,"URGENT: medical equipment for a surgery in 8 hours arrived cracked, hospital needs a replacement or repair today. Please escalate.",cargo_damage,1,cargo_damage,1,0,,,0.0,,0,cargo_damage|U|0,0
+INC-0242,"URGENT - need someone at Changi cargo terminal immediately, cannot explain on the phone.",unclear_other,1,unclear_other,1,1,,,4.0,review,1,unclear_other|U|1,0
+INC-0244,"air conditioning not working in the cab, driver uncomfortable, service reuqested. thanks.",vehicle_breakdown,0,unclear_other,0,1,,,4.0,review,1,vehicle_breakdown|N|2,0
+INC-0247,"urgent - hijack attempt on route, drvr locked the doors and is callnig from the cab. calling you now.",theft_security,1,theft_security,1,0,,,0.0,,1,theft_security|U|3,0
+INC-0248,"Re PO-4371: late arrival of the linehaul trailer, outbound wave pushed back by 36 hours Logged for the record.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0249,"quick note: duty payment query from customs on sh-26585, finance is checking will update later.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0250,Customer here. forklift overturned and the operator is not responding. Need someone on site now.,accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|2,0
+INC-0257,"check engine light on VAN-307, finishing the route then going to the workshop Logged for the record.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|0,0
+INC-0261,"SH-48477 still at the hub, connection missed, next departure tomorrow. Thanks.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0263,"Pallet collapsed in transit, around 15% of boxes broken",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0266,"Reporting from Jurong DC: wrong HS code on the declaration for SH-46229, broker needs to amend. Let me know next steps.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0268,"Hi team, employee got a minor cut on the hand from a strapping band, plaster applied, logging for record Logged for the record.",accident_injury,0,unclear_other,0,1,,,4.0,review,0,accident_injury|N|7,0
+INC-0270,"E-manifest mismatch on MSKU461038, weight differs from the declaration. Thanks.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|6,0
+INC-0272,FYI - customs threatening to seize the shipment today if the declaration is not corrected by 5pm,customs_documentation,1,customs_documentation,1,0,,,0.0,,0,customs_documentation|U|0,0
+INC-0274,"re po-8775: carton missing from the pallet delivered, count is 4 vs 3. will update later.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,1,misdelivery_lost|N|2,0
+INC-0282,drvr reports being followed by a car trying to force him off the road,theft_security,1,unclear_other,0,1,,,14.0,abstain_urgent_delay+review,1,theft_security|U|2,0
+INC-0283,"update on sh-30955: duty pyment query from customs on sh-30955, finance is checking we may need to file a damage claim. logged for the record.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|8,0
+INC-0285,"Reporting from Tuas hub: container OOLU225961 opened with mould on some cartons, humidity suspected. Customer has been informed.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0286,"Update on SH-94647: truck TRK-479 broke down in the middle lane of the expressway, hazard lights on, traffic building up behind",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0287,Reporting from Port Klang depot: driver reports being followed by a car trying to force him off the road,theft_security,1,unclear_other,0,1,,,14.0,abstain_urgent_delay+review,0,theft_security|U|2,0
+INC-0291,"High priority: wrong HS code on the declaration for SH-68007, broker needs to amend",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0293,"Re PO-1217: flat tyre on T-391 at the depot, spare fitted, back in service. Weather is bad today as well. No injuries reported.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|1,0
+INC-0294,"Seal broken on trailer TRK-117 on arrival, looks tampered overnight, 12 cartons missing from the count Not a theft as far as we know.",theft_security,0,theft_security,0,0,,,0.0,,0,theft_security|N|0,0
+INC-0301,"5 aerosol cans leaking a bit of propellant in a cagge, ventilated area, no one afected. Customer has been informed.",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,0,hazmat_spill|N|5,0
+INC-0308,"Reporting from Kuantan warehouse: cust received someone else's orrder, wants it collected",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|5,0
+INC-0311,"update on sh-53193: late arrival of the linehaul trailer, outbound wave pushed back by 4 hours thans.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0314,"Subcontractor here. cust received someone eles's order, wants it collected. Photos to follow.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0316,"Update on SH-35396: cust received someone else's order, wants it collected Let me know next seps.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0317,"Reporting from Penang depot: employee got a minor cut on the hand from a strapping band, plaster applied, logging for record. Lo...",accident_injury,0,unclear_other,0,1,,,4.0,review,1,accident_injury|N|7,0
+INC-0318,drvr here. SH-68467 marked delivered but the customer says nothing arrived Same lane had a problem last week. Nobody was hurt.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|8,0
+INC-0319,"Re PO-8555: wet cartons after the rain, contents seem dry, will check tomorrow Phtoos to follow.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0322,"Container OOLU233402 opened with mould on some cartons, humidity suspected. Let me know next steps.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0333,"Re PO-3406: pickup not done today, colletcion requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,1,delay_late|N|5,0
+INC-0339,Pallet collapsed in transit around 5% of boxes broken Logged for the record,cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0342,"Morning all, follow up needed Customer has been informed.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|8,0
+INC-0345,"Reporting from Bangkok cross-dock: duty payment query from customs on SH-61807, finance is checking. Not a theft as far as we know. Will update later.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0346,"Carton missing from the pallet delivered, count is 5 vs 3.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0351,"Pallet collapsed in transit, around 40% of boxes broken. Will update later.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0352,"Morning all, cust received someone else's order, wants it collected Logged...",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0354,"Late arrival of the linehaul trailer, outbound wave pushed back by 4 hours",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0355,"Wrong HS code on the declaration for SH-19306, broker needs to amend. Customs paperwork is also still pending on this one. Let me know next steps.",customs_documentation,0,customs_documentation,0,0,,,0.0,,1,customs_documentation|N|1,0
+INC-0358,"Reporting from Johor Bahru checkpoint: flat tyre on T-419 at the depot, spare fitted, back in service. Please advise.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|1,0
+INC-0360,"drvr here. late arrival of the linehaul trailer, outbound wave pushed back by 5 hours",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0363,"Quick note: flat tyre on TRK-463 at the depot, spare fitted, back in service.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|1,0
+INC-0368,"Shift lead here. wet cartons after the rain, contents seem dry, will check tomorrow. Logged for the record.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0369,"Reporting from Pasir Panajng terminal: cust received someone else's order, wants it collected. Let me know next steps.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|5,0
+INC-0370,Quick note: pickup not done today collection requested again for tomorrow Thanks,delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0377,"high priority: not sure who handles this, the thing at jurong dc again. thanks.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|7,0
+INC-0378,"Update on SH-65394: issue with the shipment, details to follow. Thaks.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0380,ASAP: sealed legal documents were delivered to the wrong office and are needed in court this afternoon. Please escalate.,delay_late,1,misdelivery_lost,0,0,,,108.0,missed_urgent+wrong_team,0,misdelivery_lost|U|0,1
+INC-0382,"Container MSKU796500 opened with mould on some cartons, humidity suspected.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0383,"Re PO-1834: wrong HS code on the declaration for SH-62618, broker needs to amend Please advise.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0388,"Quick note: pickup not done today, collection requested again for tomorrow. Will update later.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0389,"ASAP - carton missing from the pallet delivered, count is 12 vs 3. Logged for the record.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,1,misdelivery_lost|N|2,0
+INC-0391,"cust here. pickup not done today, collection requested again for tomorrow Customer has been informed.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0392,"FYI - wet cartons after the rain, contents seem dry, will check tomorrow Will update later.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0393,"URGENT: pickup not done today, collection requested again for tomorrow. Thanks.",delay_late,0,unclear_other,1,1,,,4.0,review,1,delay_late|N|5,0
+INC-0395,"Fuel siphoning noticed on TRK-6, tank much lower than logged. Customer has been informed.",theft_security,0,hazmat_spill,0,0,,,25.0,wrong_team_critical,0,theft_security|N|4,0
+INC-0396,"Quick note: e-maifest mismatch on TGHU132485, weight differs from the declaration",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|6,0
+INC-0405,"pls act immediately. chlorine tablets drum split open and reacting with water, fumes spreading in the shed.",hazmat_spill,1,hazmat_spill,1,0,,,0.0,,0,hazmat_spill|U|5,0
+INC-0407,"Update on SH-22073: VAN-184 stalled on a level crossing, driver evacuating the cab",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0411,"Flat tyre on LRY-32 at the depot, spare fitted, back in service. Customer has been informed.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|1,0
+INC-0416,"Reporting from Tuas hub: container TGHU315829 opened with mould on some cartons, humidity suspected. Insurance may need to be told. Will update later.",cargo_damage,0,unclear_other,0,1,,,4.0,review,1,cargo_damage|N|7,0
+INC-0421,"Update on SH-78712: pickup not done today, collection requested again for tomorrow. Thanks.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0427,"Morning all, pedestrian struck by a reversing lorry at Johor Bahru checkpoint, casualty on the ground, calling 995.",accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|7,0
+INC-0429,"Carton missing from the pallet delivered, count is 9 vs 2. Let me know next steps.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0433,"Carton missing from the pallet delivered, count is 2 vs 12",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0435,"Hi team, pallet collapsed in transit, around 15% of boxes broken. Let me know next steps.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0436,"20 aerosol cans leaking a bit of propellant in a cage, ventilated area, no one affected. Thanks.",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,0,hazmat_spill|N|5,0
+INC-0439,"Mornng all, SH-88579 still at the hub, connection missde, next departrue tomorrow",delay_late,0,unclear_other,0,1,,,4.0,review,1,delay_late|N|6,0
+INC-0440,"High priority: employee got a minor cut on the hand from a strapping band, plaster applied, logging for record. Customer has asked for an update. Customer has been informed.",accident_injury,0,unclear_other,0,1,,,4.0,review,1,accident_injury|N|7,0
+INC-0441,"Mroning all, check engine light on TRK-370, finishing the rouute then going to the workshop. Logged for the record.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|0,0
+INC-0442,"Hi team, seal broken on trailer TRK-306 on arrival, looks tampered overnight, 15 cartons missing from the count. We may need to file a damage claim. Let me know next steps.",theft_security,0,cargo_damage,0,0,,,25.0,wrong_team_critical,1,theft_security|N|0,0
+INC-0450,"Hi team, spill kit used for a litre of hydraulic oil near the yard, area cordoned and cleaned.",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,0,hazmat_spill|N|7,0
+INC-0454,Reporting from Johor Bahru checkpoint: SH-64018 marked delivered but the customer says nothing arrived. Please advise.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0456,"SH-56346 still at the hub, connection missed, next departure tomorrow Will update later.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0460,"Quick note: pickup not done today, collection requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0461,late arrival of the linehaul trailer outbound wave pushed back by 8 hours Weather is bad today as well No damage to the cargo Logged for the record,delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0465,"Wrong HS code on the declaration for SH-89260, broker needs to amend. Photos to follow.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0467,"URGENT: wet cartons after the rain, contents seem dry, will check tomorrow. Customs paperwork is also still pending on this one. No spill.",cargo_damage,0,customs_documentation,0,0,,,8.0,wrong_team,1,cargo_damage|N|5,0
+INC-0468,"Wet cartons after the rain, contents seem dry, will check tomorrow.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0470,"Re PO-7769: issue w/ the sihpment, details to follow Customer has been informed.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0480,"SH-51662 still at the hub, connection missed, next departure tomorrow Let me know next steps.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0483,"Morning all, wet cartons after the rain, contents seem dry, will check tomorrow Please advise.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0487,"FYI - SH-86543 still at the hub, connection missed, next departure tomorrow. We may need to file a damage claim. cust has been informed.",delay_late,0,cargo_damage,0,0,,,8.0,wrong_team,1,delay_late|N|6,0
+INC-0496,Wrong HS code on the declaration for SH-62862 broker nee...,customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0497,"Carton missing from the pallet delivered, count is 12 vs 12. Will update later.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0501,"Issue w/ the shipment, details to follow. No damage to the cargo. cust has been informed.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0505,"Duty payment query from customs on SH-83288, finance is checking. Will update later.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0509,"Need help NOW. trk T-71 broke down in the middle lane of the expressway, hazard lights on, traffic building up behind.",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0510,"dispatcher here. pallet collapsed in transit, around 15% of boxes broken.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|2,0
+INC-0516,"Flat tyre on T-293 at the depot, spare fitted, back in service Please advise.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|1,0
+INC-0518,"Reporting from Jurong DC: e-manifest mismatch on TGHU309767, weight differs from the declaration Photos to follow.",delay_late,0,customs_documentation,0,0,,,8.0,wrong_team,0,customs_documentation|N|6,1
+INC-0520,"Update on SH-21401: drvr reports a small collision in the car park, thankfully no one wa...",accident_injury,0,accident_injury,0,0,,,0.0,,0,accident_injury|N|6,0
+INC-0523,"Update on SH-39454: carton missing from the pallet delivered, count is 6 vs 2. Let me know next steps.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0526,"Re PO-9914: wet cartons after the rain, contents seem dry, will check tomorrow.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0527,"Morning all, VAN-243 stalled on a level crossing, driver evacuating the cab. Calling you now.",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0528,"FYI - duty payment query from customs on SH-62459, finance is checking.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0534,"Please act immediately. pedestrian struck by a reversing lorry at Penang depot, casualty on the ground, calling 995 Calling you now.",accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|7,0
+INC-0542,"Hi team, contianer TGHU739760 opened w/ mould on some cartons, humidity suspected. Will upate later.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0549,"Quick note: emplyoee got a minor cut on the hand from a strapping band, plaster applied, logging for record. Please advise.",accident_injury,0,unclear_other,0,1,,,4.0,review,0,accident_injury|N|7,0
+INC-0551,Customer service agent here. SH-30648 marked delivered but the customer says nothing arrievd Logged for the record.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0554,"Yard marshal here. palelt collapsed in transit, around 20% of boxes broken Photos to follow.",cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|2,0
+INC-0558,FYI - chcek engine liht on T-346 finishing the route then going to the worskhop Will update later,vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|0,0
+INC-0560,"Re PO-4055: customer received someone else's order, wants it collected.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0566,Quick note: customs threatening to seize the shipment today if the declaration is not corrected by 5pm,customs_documentation,1,customs_documentation,1,0,,,0.0,,0,customs_documentation|U|0,0
+INC-0574,"Hi team, SH-17315 marked delivered but the cusotmer says nothing arrived. Photos to follow.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0576,Please act immdeiately pedestrian struck by a reversing lorry at Pasir Panjang terminal casualty on the ground calling 995,accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|7,0
+INC-0579,"FYI - chlorine tablets drum split open and reacting with water, fumes spreading in the shed Calling you now.",hazmat_spill,1,hazmat_spill,1,0,,,0.0,,0,hazmat_spill|U|5,0
+INC-0580,"Re PO-1114: duty payment query from customs on SH-71654, finance is checking",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|8,0
+INC-0585,"seal brken on trailer T-290 on arrival, looks tampered overnight, 3 cartons missing from the count. This will probably dealy the dlvry. Please advise.",theft_security,0,theft_security,0,0,,,0.0,,1,theft_security|N|0,0
+INC-0587,"please act immediately. trk van-48 broke down in the middle lane of the expressway, hazard lights on, traffic building up behind",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0593,quick note: pickup not done today clolection reuqested again for tomorrow,delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0594,"Container CMAU184279 opened with mould on some cartons, humidity suspected. Photos to follow.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0600,"Customer service agent here. SH-73499 still at the hub, connection missed, next departure tomorrow The truck has also been making a noise lately. Please advise.",delay_late,0,unclear_other,0,1,,,4.0,review,1,delay_late|N|6,0
+INC-0607,"Quick note: carton missing from the pallet delivered, count is 11 vs 3. The truck has also been making a noise lately.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,1,misdelivery_lost|N|2,0
+INC-0609,"ASAP - late arrival of the linehaul trailer, outbound wave pushed back by 5 hours Will update later.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0611,"Re PO-4104: SH-60506 still at the hub, connection missed, next departure tomorrow. Photos to follow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0614,"Flat tyre on TRK-231 at the depot, spare fitted, back in service. Logged for the record.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|1,0
+INC-0622,"Customer here. SH-49739 still at the hub, connection missed, next departure tomorrow. Will update later.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0625,"Quick note: SH-62431 still at the hub, connection missed, next departure tomorrow",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0626,"fyi - craton missing from the pallet delivered, count is 6 vs 8. please advise.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0629,"quick note: wet cartons after the rain, contents seem dry, will ceck tomorrow please advise.",theft_security,0,cargo_damage,0,0,,,25.0,wrong_team_critical,1,cargo_damage|N|5,1
+INC-0633,"Pickup not done today, collection requested again for tomorrow. Logged for the record.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0636,"Morning all, wrong HS code on the declaration for SH-15579, broker needs to amend Please advise.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0644,"Reporting from Chnagi cargo terminal: organ-transprot courier delayed at Changi cargo terminal, hospital is waiting.",delay_late,1,delay_late,1,0,,,0.0,,1,delay_late|U|3,0
+INC-0649,"Customer here. seal broken on trailer TRK-176 on arrival, looks tampered overnight, 20 cartons missing from the count. The truck has also been making a noise lately. Will update later.",theft_security,0,theft_security,0,0,,,0.0,,1,theft_security|N|0,0
+INC-0653,"Reporting from Jurong DC: customer received someone else's order, wants it collected.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0654,"Late arrival of the linehaul trailer, outbound wave pushed back by 4 hours. Customer has been informed.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0655,"Hi team, pallet of pesticide ruptured, vapour cloud near the loading bay, we are clearing the area.",hazmat_spill,1,hazmat_spill,1,0,,,0.0,,0,hazmat_spill|U|3,0
+INC-0656,"Morning all, 3 aerosol cans leaking a bit of propellant in a cage, ventilated area, no one affected. Not sure if the shipment is complete.",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,1,hazmat_spill|N|5,0
+INC-0659,"Dock supervisor here. T-233 scraped a bollard while reversing, driver is fine, bumper cracked.",accident_injury,0,cargo_damage,0,0,,,25.0,wrong_team_critical,0,accident_injury|N|3,0
+INC-0671,"FYI - pickup not done today, collection requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0673,"Please act immediately. VAN-116 stalled on a level crossing, driver evacuating the cab.",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0674,"Container TGHU457713 opened with mould on some cartons, humidity suspected. Thanks.",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0676,"Need help NOW. organ-transport courier delayed at Ipoh transfer point, hospital is waiting",delay_late,1,delay_late,1,0,,,0.0,,0,delay_late|U|3,0
+INC-0677,"Quick note: pickup not done today, collection requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0679,"FYI - pickup not done today, collection requested again for tomorrow. Let me know next steps.",delay_late,0,unclear_other,0,1,,,4.0,review,1,delay_late|N|5,0
+INC-0682,"Late arrival of the linehaul trailer, outbound wave pushed back by 4 hours Will update later.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0683,"Hi team, pickup not done today, collection requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0684,"Re PO-5840: employee got a minor cut on the hand from a strapping band, plaster applied, logging for record.",accident_injury,0,unclear_other,0,1,,,4.0,review,0,accident_injury|N|7,0
+INC-0691,"Customer received someone else's order, wants it collected. The truck has also been making a noise lately. Will update later.",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|5,0
+INC-0693,"Quick note: TRK-404 scraped a bollard while reversing, drvr is fine, bumper cracked. Customer has been informed.",accident_injury,0,cargo_damage,0,0,,,25.0,wrong_team_critical,0,accident_injury|N|3,0
+INC-0701,Quick note: spill kit used for a ltre of hydraulic oil near th...,hazmat_spill,0,hazmat_spill,0,0,,,0.0,,0,hazmat_spill|N|7,0
+INC-0703,"subcontractor here. pickup not done today, collection requested again for tomorrow. thanks.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0707,"TRK-413 stalled on a level crossing, driver evacuating the cab. Please escalate.",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0710,"Hi team, employee got a minor cut on the hand from a strapping band, plaster applied, logging for record. Photos to follow.",accident_injury,0,unclear_other,0,1,,,4.0,review,0,accident_injury|N|7,0
+INC-0715,"Container TGHU509783 opened with mould on some cartons, humidity suspected",cargo_damage,0,unclear_other,0,1,,,4.0,review,0,cargo_damage|N|7,0
+INC-0718,"URGENT: cntr OOLU320848 opened with mould on some cartons, humidity suspected. Customer has been informed.",cargo_damage,0,unclear_other,1,1,,,4.0,review,1,cargo_damage|N|7,0
+INC-0719,"Emergency! trk LRY-80 broke down in the middle lane of the expressway, hazard lihts on, traffic building up behind.",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0722,"Check engine light on TRK-333, fiinishing the rote then going to the workshop.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|0,0
+INC-0723,"Reporting from Ipoh transfer point: late arrival of the linehaul trailer, outbound wave pushed back by 6 hours. Logged for the record.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0724,Shift lead here. SH-84431 marked delivered but the customer says nothing arrived,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0726,"reporting from pasir panjang terminal: wrong hs code on the declaration for sh-71815, broker needs to amend. logged for the record.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|1,0
+INC-0727,"cust here. flat tyre on T-38 at the depot, spare fitted, back in service Let me know next steps.",accident_injury,0,vehicle_breakdown,0,0,,,25.0,wrong_team_critical,0,vehicle_breakdown|N|1,1
+INC-0732,SH-95151 marked delivered but the customer says nothing arrived. Not sure if the shipment is complete. Let me know next steps.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|8,0
+INC-0737,SH-80137 marked delivered but the customer says nothing arrived. This will probably delay the delivery.,misdelivery_lost,0,delay_late,0,0,,,8.0,wrong_team,1,misdelivery_lost|N|8,0
+INC-0740,URGENT - customs threatening to seize the shipment today if the declaration is not corrected by 5pm. The truck has also been making a noise lately. Send help.,customs_documentation,1,customs_documentation,1,0,,,0.0,,1,customs_documentation|U|0,0
+INC-0748,"Sift lead here. pallet collapsed in transit, around 10% of boxes broken.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0751,"Quick note: 24 aerosol cans leaking a bit of propellant in a cage, ventilated area, no one affected",hazmat_spill,0,hazmat_spill,0,0,,,0.0,,0,hazmat_spill|N|5,0
+INC-0752,"update on sh-86236: flat tyre on trk-428 at the depot, spare fitted, back in service",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|1,0
+INC-0753,"Update on SH-96954: truck TRK-223 broke down in the middle lane of the expressway, hazard lights on, traffic building up behind. Please escalate.",vehicle_breakdown,1,vehicle_breakdown,0,0,,,100.0,missed_urgent,0,vehicle_breakdown|U|0,0
+INC-0754,Customer service agent here. forklift overturned and the operator is not responding Send help.,accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|2,0
+INC-0757,"Fuel siphoning noticed on LRY-163, tank much lower than logged",theft_security,0,hazmat_spill,0,0,,,25.0,wrong_team_critical,0,theft_security|N|4,0
+INC-0758,SH-46754 marked delivered but the customer says nothing arrived.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|8,0
+INC-0761,"Morning all, SH-94341 still at the hub, connection missed, next departure tomorrow. Logged for the record.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0765,"URGENT: VAN-461 stalled on a level crossing, drvr evacuating the cab",vehicle_breakdown,1,vehicle_breakdown,1,0,,,0.0,,0,vehicle_breakdown|U|3,0
+INC-0768,"FYI - pickup not done today, collection requested again for tomorrow.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0770,Emergency! drvr reports being followed by a car trying to force him off the road,theft_security,1,unclear_other,1,1,,,4.0,review,1,theft_security|U|2,0
+INC-0781,"Dispatcher here. issue with the shipment, details to follow Please advise.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|10,0
+INC-0791,"carton missing from the pallet delivered, count is 1 vs 6. please advise.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0
+INC-0794,"Re PO-9184: chlorine tableets drum split open and reacting w/ water, fumes spreading in the shed. Need someone on site now.",hazmat_spill,1,hazmat_spill,1,0,,,0.0,,0,hazmat_spill|U|5,0
+INC-0795,"Quick note: check engine light on TRK-198, finishing the route then going to the workshop",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,0,vehicle_breakdown|N|0,0
+INC-0796,"Morning all, e-manifest mismatch on OOLU856037, weight differs from the declaration. Let me know next steps.",customs_documentation,0,customs_documentation,0,0,,,0.0,,0,customs_documentation|N|6,0
+INC-0798,customer received someone else's order waants it c...,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0804,FYI - sealed legal documents were delivered to the wrng office and are needed in court this afternoon.,misdelivery_lost,1,unclear_other,0,1,,,14.0,abstain_urgent_delay+review,0,misdelivery_lost|U|0,0
+INC-0815,"Urgent please, late arrival of the linehaul trailer, outbound wave pushed back by 6 hours. Photos to follow.",delay_late,0,delay_late,0,0,,,0.0,,1,delay_late|N|7,0
+INC-0817,"Shift lead here. driver reports a small collision in the car park, thankfully no one was hurt, exchanging details",accident_injury,0,accident_injury,0,0,,,0.0,,0,accident_injury|N|6,0
+INC-0825,"Dock supervisor here. flat tyre on LY-66 at the depot, spare fitted, back in service. Thanks.",vehicle_breakdown,0,vehicle_breakdown,0,0,,,0.0,,1,vehicle_breakdown|N|1,0
+INC-0831,"Re PO-5841: SH-66063 still at the hub, connection missed, next departure tomorrow Logged for the record.",delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|6,0
+INC-0834,URGENT: driver reoprts being followed by a car trying to foce him off the road.,theft_security,1,unclear_other,1,1,,,4.0,review,1,theft_security|U|2,0
+INC-0835,"Morning all, T-358 scraped a bollard while reversing, driver is fine, bumper cracked. We may need to file a damage claim.",accident_injury,0,cargo_damage,0,0,,,25.0,wrong_team_critical,1,accident_injury|N|3,0
+INC-0836,"Hi team, container MSKU660383 opened with mould on some cartons, humidity suspected. Same lane had a problem last week. Will update later.",cargo_damage,0,unclear_other,0,1,,,4.0,review,1,cargo_damage|N|7,0
+INC-0841,"Hi team, wet cartons atfer the rain, contents seem dry, will check tomorrow. Logged for the record.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|5,0
+INC-0842,"Re PO-7843: customer received someone else's order, wants it collec...",misdelivery_lost,0,unclear_other,0,1,,,4.0,review,0,misdelivery_lost|N|5,0
+INC-0844,Quick note: customs threatening to seize the shipment today if the declaration is not corrected by 5pm Insurance may need to be told. Calling you now.,customs_documentation,1,customs_documentation,1,0,,,0.0,,1,customs_documentation|U|0,0
+INC-0845,"Hi team, follow up needed Photos to follow.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|8,0
+INC-0846,Re PO-1764: customs threatening to seize the shipment today if the declaration is not corrected by 5pm,customs_documentation,1,customs_documentation,1,0,,,0.0,,0,customs_documentation|U|0,0
+INC-0847,FYI - forklift overturned and the operator is not responding This will probably delay the delivery. Please escalate.,accident_injury,1,accident_injury,1,0,,,0.0,,1,accident_injury|U|2,0
+INC-0860,"Re PO-7777: pedestrian struck by a reversing lorry at Batam ferry terminal, casualty on the ground, calling 995. Insurance may need to be told.",accident_injury,1,accident_injury,1,0,,,0.0,,1,accident_injury|U|7,0
+INC-0862,repoting from bangkok crosss-dock: wet cartons after the rain contents seem dry will check tomorrow please advise,cargo_damage,0,cargo_damage,0,0,,,0.0,,1,cargo_damage|N|5,0
+INC-0865,re po-7523: sh-67460 marked delivered but the custommer says nothing arrived. insurance may need to be told.,misdelivery_lost,0,unclear_other,0,1,,,4.0,review,1,misdelivery_lost|N|8,0
+INC-0869,FYI - pikcup not done today collection requested again for tomorrow Thnaks,delay_late,0,unclear_other,0,1,,,4.0,review,0,delay_late|N|5,0
+INC-0874,"Pallet collapsed in transit, around 20% of boxes broken",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0876,forklift overturned and the operator is not responding,accident_injury,1,accident_injury,1,0,,,0.0,,0,accident_injury|U|2,0
+INC-0880,ASAP: customs threatening to seize the shipment today if the declaration is not correced by 5pm Weather is bad toay as well,customs_documentation,1,customs_documentation,1,0,,,0.0,,1,customs_documentation|U|0,0
+INC-0883,"Re PO-4618: late arrival of the linehaul trailer, outbound wave pushed back by 24 hours Logged for the record.",delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0884,"Fuel siphoning noticed on T-58, tank much lower than logged.",theft_security,0,hazmat_spill,0,0,,,25.0,wrong_team_critical,0,theft_security|N|4,0
+INC-0885,Quick note: late arrival of the lineaul trailer outbound wave pushed back by 4 hours Phhotos to follow,delay_late,0,delay_late,0,0,,,0.0,,0,delay_late|N|7,0
+INC-0888,"Need help NOW. need someone at Batam ferry terminal immediately, cannot explain on the phone. Calling you now.",unclear_other,1,unclear_other,1,1,,,4.0,review,1,unclear_other|U|1,0
+INC-0891,"Not sure who handles this, the thing at Bangkok cross-dock again Customer has been informed.",unclear_other,0,unclear_other,0,1,,,4.0,review,1,unclear_other|N|7,0
+INC-0897,"Update on SH-52109: pallet collapsed in transit, around 15% of boxes broken. Customer has been informed.",cargo_damage,0,cargo_damage,0,0,,,0.0,,0,cargo_damage|N|2,0
+INC-0898,"carton missing from the pallet delivered, count is 8 vs 5. Let me know next steps.",misdelivery_lost,0,misdelivery_lost,0,0,,,0.0,,0,misdelivery_lost|N|2,0

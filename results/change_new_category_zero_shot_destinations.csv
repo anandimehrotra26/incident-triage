@@ -1,0 +1,13 @@
+variant,seed,approach,delay_late,vehicle_breakdown,theft_security
+same_template,42,B_tfidf_logreg,7.0,3.0,2.0
+same_template,42,C_plus_rule_features,0.0,0.0,0.0
+same_template,43,B_tfidf_logreg,2.0,3.0,2.0
+same_template,43,C_plus_rule_features,1.0,0.0,0.0
+same_template,44,B_tfidf_logreg,2.0,3.0,0.0
+same_template,44,C_plus_rule_features,0.0,0.0,0.0
+new_template,42,B_tfidf_logreg,1.0,0.0,2.0
+new_template,42,C_plus_rule_features,1.0,0.0,0.0
+new_template,43,B_tfidf_logreg,3.0,0.0,0.0
+new_template,43,C_plus_rule_features,0.0,0.0,0.0
+new_template,44,B_tfidf_logreg,0.0,0.0,0.0
+new_template,44,C_plus_rule_features,1.0,0.0,0.0
