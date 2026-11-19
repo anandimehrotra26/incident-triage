@@ -6,7 +6,7 @@
 |---|---|---|
 | `incidents.csv` | 900 | Synthetic logistics incident reports in 9 categories (the base task). |
 | `incidents_coldchain_ext.csv` | 120 | Synthetic reports for a 10th category, `cold_chain_excursion`, used only in the changed-requirement experiment. |
-| `review/review_sheet_blank.csv` | 60 | Blind sample of `incidents.csv` (labels removed) for independent human review. **Review is pending - see below.** |
+| `review/review_sheet_blank.csv` | 60 | Blind sample of `incidents.csv` (labels removed) for independent human review. Completed after submission; see point 5 below. |
 | `DATASET_STATS.md` | - | Auto-generated class counts, urgent counts, distinct-text and distinct-template counts. |
 
 ## Where it came from
@@ -44,7 +44,7 @@
 2. **Only 125 core sentences (about 14 per category).** Models can memorise them. This is why the main evaluation reports a second, harsher split that hides entire templates.
 3. **One author wrote both the data and the rules baseline.** Vocabulary leaks between them. A first draft of the rules baseline contained ~25 words copied from the templates; they were removed before reporting (see `docs/MODEL_SELECTION.md`), but residual leakage through shared domain vocabulary is unavoidable.
 4. **Labels follow one author's rules** (`docs/LABELING_GUIDE.md`). A real operator would define urgency and category boundaries differently.
-5. **Independent label review has not been done yet.** The brief asks for >=50 labels to be reviewed by someone independent of the labeller. The AI assistant that wrote the generator is not independent, so no review is claimed. The blind sheet, instructions and scoring script are provided (`data/review/`, `triage/review.py`); until a person completes the sheet this requirement is **open**.
+5. **Independent label review was done after submission (15-16 Nov 2026).** Two people with no part in building the project relabelled 60 reports from `review/review_sheet_blank.csv` without seeing the labels: category agreement 88.3%, urgent 91.7%. Files: `review/review_sheet_completed_independent.csv`, `review/review_report_independent.md`.
 
 ## Licence
 

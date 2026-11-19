@@ -20,4 +20,4 @@
 
 **Recommendation.** Do not launch on this evidence. Run a 4-6 week **shadow pilot** on real reports: the model suggests, humans decide, everything is logged. Go/no-go: >= 99% urgent recall on >= 200 real urgent cases, <= 1% costly misroutes among auto-routed reports, and a human re-labelled sample (>= 100) to replace the invented labels and penalties. Start by automating only the URGENT flag and the highest-confidence routes.
 
-**Caveats.** All data is synthetic and template-based; labels and penalties are the author's assumptions; independent label review and user feedback are pending (see `FEEDBACK.md`, `data/review/`); an LLM-based option was not measured.
+**Caveats.** All data is synthetic and template-based; labels and penalties are the author's assumptions; independent label review and demo feedback were done after submission (see README, `FEEDBACK.md`, `data/review/`); an LLM-based option was not measured.

@@ -2,7 +2,7 @@
 
 Classifies free-text incident reports into 9 categories, routes them to a team, flags **urgent** cases, and sends uncertain ones to a human. Compares a keyword-rules baseline with two ML variants on cost-weighted quality (costly misroutes), latency and cost, and shows how the system adapts to a stricter urgent-miss penalty and to a new category.
 
-> **Read this first.** All data is synthetic and template-based, labels and costs are the author's assumptions, and the two things the brief asks a *person* to do - independent label review and demo feedback - are **not done yet** (tooling provided). Results bracket real performance; they do not predict it. See `BUSINESS_SUMMARY.md`.
+> **Read this first.** All data is synthetic and template-based, labels and costs are the author's assumptions, and the two things the brief asks a *person* to do - independent label review and demo feedback - were **done after submission** (14-20 Nov 2026; see "Checks done after submission" below). Results bracket real performance; they do not predict it. See `BUSINESS_SUMMARY.md`.
 
 ![demo](docs/demo_screenshot.png)
 
@@ -25,8 +25,9 @@ CLI: `python -m triage.cli "driver is bleeding after a collision"` or `--file re
 ## Collaboration and use of AI agents
 
 - **AI agent:** Claude (Anthropic, Claude Sonnet 5.5) wrote essentially all of the code (`triage/`, `demo/`, `tests/`, the synthetic data generator), the first drafts of every document, and ran the experiments in `results/` through its file and shell tools in a single working session on 2026-10-26. The numbers in `results/` are the unedited output of the scripts in this repository. Full detail: `ATTRIBUTION.md`.
-- **Me (project owner):** I specified the project and directed Claude throughout (vibe coding): I set the goals, reviewed what it produced, and chose what to keep. I did not write the code by hand.
-- **Other people:** none. This was solo work with Claude. The independent label review and the demo feedback described in `FEEDBACK.md` and `data/review/` were not done.
+- **Me (project owner, Anandi Mehrotra):** I gave Claude the brief, directed it throughout and deployed the demo. I did not write the code by hand, and I did not verify the results before submitting: the checks below were done afterwards.
+- **Other people:** Dhruv and Pranav, friends with no part in building the project, did the independent label review and tested the live demo after submission.
+- **AI after submission:** Claude also helped me in a separate session (13-20 Nov): it made the review sheets, ran the penalty check below with me and drafted these updates.
 - No real or confidential data was given to any AI tool; all data is synthetic.
 
 ## What is in the repo
@@ -71,13 +72,26 @@ Changed requirements (`results/CHANGE_REQUEST.md`): strict penalty (300) -> re-t
 |---|---|
 | working demo | done (`demo/`, tested with curl and a headless browser); live link at the top of this README |
 | dataset >= 300 reports, documented, non-confidential | done: 900 synthetic, `data/DATA_PROVENANCE.md` |
-| **independent review of >= 50 labels** | **NOT done.** Blind 60-report sheet, instructions and scoring script are ready; needs a human who did not write the labels |
+| independent review of >= 50 labels | done after submission (15-16 Nov 2026): 60 labels, 2 independent reviewers; `data/review/review_report_independent.md` |
 | >= 2 approaches, baseline, quality / latency / cost, error analysis, abstention | done |
 | changed requirement | done (two scenarios) |
 | GitHub repo | this repository |
 | one-page business summary | done |
-| attribution of collaborators and AI tools | done (`ATTRIBUTION.md`; solo work with Claude, no other collaborators) |
-| feedback from someone who tried the demo | **NOT done**; `FEEDBACK.md` has the protocol |
+| attribution of collaborators and AI tools | done (`ATTRIBUTION.md`) |
+| feedback from someone who tried the demo | done after submission (14-16 Nov 2026): 2 testers; `FEEDBACK.md` |
+
+## Checks done after submission (14-20 Nov 2026)
+
+Done after the 26 Oct submission. Nothing in `results/` was changed.
+
+| check | what it found |
+|---|---|
+| Independent label review | Dhruv and Pranav relabelled 60 reports (30 each) without seeing the recorded labels. Agreement with the recorded labels: category 53/60 (88.3%, Cohen's kappa 0.87), urgent 55/60 (91.7%, kappa 0.73). Of the 2 deliberately flipped labels in the sample, they caught 1. `data/review/review_report_independent.md` |
+| My own blind relabel (not independent) | Same 60, done 14 Nov before I saw the labels: category 51/60 (85.0%, kappa 0.83), urgent 52/60 (86.7%, kappa 0.63). I caught the other flipped label, and marked 7 routine reports urgent that the labels did not. `data/review/review_report_mine.md` |
+| Demo feedback | 2 testers, 5 reports each (`FEEDBACK.md`). "Forklift toppled operator is unresponsive" scored 6.5% urgent against the 5% cut-off: neither "toppled" nor "unresponsive" appears in the training data. |
+| Reproduction | `python -m triage.evaluate`, re-run from a fresh clone, gives the same 5-run averages as `results/RESULTS.md`. |
+| Penalty check | `python checks/penalty_check.py`. If a false URGENT flag on a report sent to a person cost 5 instead of 0, unseen-wording averages become B 580.9 and C+ 483.3 (as built: 402.8 and 416.6). Which model is cheaper depends on that assumption; that neither beats people reading everything (400) on unseen wording holds either way. |
+| Safety net | In all 10 runs (5 seeds x 2 tests) approaches C and C+ miss exactly the same urgent reports (`results/results.json`), so the rules safety net caught nothing extra; it only adds false alarms, e.g. "import permit expired" is forced URGENT. |
 
 ## Limitations
 

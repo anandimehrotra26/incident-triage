@@ -1,6 +1,6 @@
 # Instructions for the independent reviewer
 
-**Status: PENDING.** No completed review exists in this repository yet. Whoever reviews must not be the person who wrote the generator or the labelling guide.
+**Status: done after submission (15-16 Nov 2026).** Two reviewers completed 30 reports each: `review_sheet_completed_independent.csv`, scored in `review_report_independent.md`. Whoever reviews must not be the person who wrote the generator or the labelling guide.
 
 1. Read `docs/LABELING_GUIDE.md` (5 minutes).
 2. Open `review_sheet_blank.csv` (60 reports, labels hidden). Do **not** open `data/incidents.csv`.
